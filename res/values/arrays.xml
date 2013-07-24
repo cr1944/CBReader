@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="entries_auto_refresh">
+        <item>仅在Wi-Fi下自动刷新</item>
+        <item>始终自动刷新</item>
+        <item>你甭管，我自己刷新</item>
+    </string-array>
+    <string-array name="entryvalues_auto_refresh">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="entries_rating">
+        <item>垃圾中的战斗机,扣5分</item>
+        <item>太垃圾了,扣4分</item>
+        <item>傻冒新闻,扣3分</item>
+        <item>差劲,扣2分</item>
+        <item>不怎么样,扣1分</item>
+        <item>平淡,0分</item>
+        <item>凑合吧,1分</item>
+        <item>还可以,2分</item>
+        <item>很不错,3分</item>
+        <item>太棒了,4分</item>
+        <item>太有才了,满分!</item>
+    </string-array>
+
+</resources>

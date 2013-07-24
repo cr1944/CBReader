@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cheng.app.cnbeta.ui.LoadingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:gravity="center"
+    android:background="@drawable/load_bg"
+    android:orientation="horizontal" >
+
+    <ProgressBar android:id="@+id/progress"
+        style="@android:style/Widget.ProgressBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/load_more"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@color/news_title_color" />
+
+</cheng.app.cnbeta.ui.LoadingLayout>

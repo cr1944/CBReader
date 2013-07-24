@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/display_setting" >
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="key_display_logo"
+            android:persistent="false"
+            android:summary="@string/display_logo_info"
+            android:title="@string/display_logo" />
+
+        <cheng.app.cnbeta.ui.FontSizePreference
+                android:key="key_font_size"
+                android:title="@string/font_size"
+                android:dialogTitle="@string/font_size" />
+        
+        <!-- <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="key_auto_cache"
+            android:persistent="false"
+            android:summary="@string/auto_cache_info"
+            android:title="@string/auto_cache" /> -->
+
+        <ListPreference
+            android:dialogTitle="@string/auto_refresh"
+            android:entries="@array/entries_auto_refresh"
+            android:entryValues="@array/entryvalues_auto_refresh"
+            android:key="key_auto_refresh"
+            android:persistent="false"
+            android:title="@string/auto_refresh" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/account_setting" >
+
+        <EditTextPreference
+            android:autoText="false"
+            android:dialogTitle="@string/account_name"
+            android:key="key_comment_name"
+            android:persistent="false"
+            android:singleLine="true"
+            android:summary="@string/account_hint"
+            android:title="@string/account_name" />
+
+        <EditTextPreference
+            android:autoText="false"
+            android:dialogTitle="@string/account_email"
+            android:key="key_comment_email"
+            android:persistent="false"
+            android:singleLine="true"
+            android:summary="@string/account_hint"
+            android:title="@string/account_email" />
+        <!-- <EditTextPreference
+            android:autoText="false"
+            android:dialogTitle="@string/comment_tail"
+            android:key="key_comment_tail"
+            android:persistent="false"
+            android:singleLine="true"
+            android:summary="@string/default_comment_tail"
+            android:title="@string/comment_tail" /> -->
+        <PreferenceScreen android:key="key_account_sina"
+            android:summary="@string/account_hint"
+            android:title="@string/account_sina" >
+        </PreferenceScreen>
+        <PreferenceScreen android:key="key_account_tencent"
+            android:summary="@string/account_hint"
+            android:title="@string/account_tencent" >
+        </PreferenceScreen>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="key_comment_tail"
+            android:persistent="false"
+            android:title="@string/comment_tail" />
+        <!-- <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="key_share_pic"
+            android:persistent="false"
+            android:summary="@string/share_pic_text"
+            android:title="@string/share_pic" /> -->
+        </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/other_setting" >
+        <PreferenceScreen android:key="key_clean_cache"
+            android:summary="@string/clean_cache_info"
+            android:title="@string/clean_cache" >
+        </PreferenceScreen>
+        <PreferenceScreen android:key="key_help"
+            android:title="@string/help" >
+            <intent
+                android:action="cheng.app.cnbeta.help" />
+        </PreferenceScreen>
+        <PreferenceScreen android:key="key_suggestion"
+            android:title="@string/suggestion"
+            android:summary="@string/suggestion_info" >
+        </PreferenceScreen>
+        <PreferenceScreen android:key="key_about"
+            android:title="@string/about" >
+            <intent
+                android:action="cheng.app.cnbeta.about" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>

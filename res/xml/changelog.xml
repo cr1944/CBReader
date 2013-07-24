@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelog>
+    <release
+        version="1.6"
+        versioncode="7">
+        <change>修正无法看评论的bug，由于这是官方api的问题，返回的首页数据就是评论关闭，评论数为0，所以首页仍然会显示评论已关闭，但是进详情可以查看评论请放心</change>
+        <change>去掉了帮助里面难看的TIPS..</change>
+        <change>由于cb的API并没有官方公布，所以这个应用后续没有大的问题不会再更新了，抱歉，我抽空会放出源代码</change>
+    </release>
+</changelog>
